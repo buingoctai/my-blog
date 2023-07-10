@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  & > .brand__name {
+    font-size: 24px;
+    color: #1a1a1a;
+  }
+  & > .menu-wrapper {
+    min-width: 500px;
+    .menu {
+      border-bottom: none;
+      .menu-item::after {
+        border-bottom-width: 0;
+      }
+      .menu-item-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .menu-item-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 16px;
+          border-radius: 29px;
+          width: 96px;
+          height: 40px;
+          background: #090d1f;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .menu-wrapper {
+      max-width: 46px;
+      min-width: 46px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-inline: 24px;
+  }
+}

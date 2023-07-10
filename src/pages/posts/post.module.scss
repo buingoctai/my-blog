@@ -1,0 +1,22 @@
+.blogPageHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.blogPageContent {
+  margin: 8px 0px;
+}
+
+.button__back {
+  padding: 6px 6px;
+  border-radius: 6px;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
