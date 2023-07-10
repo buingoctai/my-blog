@@ -2,11 +2,10 @@
 import IconMoonLight from '@/assets/icon-moon-light.svg';
 import IconSunLight from '@/assets/icon-sun-light.svg';
 import { MenuOutlined } from '@ant-design/icons';
-import { Layout, Menu } from 'antd';
+import { Menu } from 'antd';
 import Image from 'next/image';
 import React from 'react';
 import styles from './Header.module.scss';
-const { Header } = Layout;
 
 interface IHeader {
     mode?: 'horizontal' | 'inline',
